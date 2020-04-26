@@ -1,1 +1,81 @@
-$primary-color = chartreuse;
+@import "partials/general";
+
+.header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color;
+
+  img {
+      margin-top: 10px;
+      margin-left: 20px;
+      max-height: 30px;
+  }
+  img:hover {
+    transform:scale(1.1);
+  }
+  nav {
+    padding: 20px 0;
+    margin-left: auto;
+    ul {
+      margin-right: 10px;
+    }
+    li {
+      display: inline;
+      margin-left: 5px;
+    }
+    a:hover {
+      text-decoration: overline;
+      color: $tertiary-color;
+    }
+  }
+}
+main {
+  min-height: 70vh;
+  text-align: center;
+  padding: 10vh 30px;
+  // background-image: url($bg-img);
+  // background-color: $primary-color;
+  color: $secondary-color;
+
+  h1 {
+    margin: 0 0 20px 0;
+  }
+  section {
+
+  }
+}
+.btn {
+  color: $secondary-color;
+  display: inline-block;
+  // background: red;
+  border: 2px solid $secondary-color;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+footer {
+  background-color: lighten($secondary-color,80%);
+  min-height: 9vh;
+  nav {
+    padding: 20px 0;
+    margin-left: auto;
+    ul {
+      display: flex;
+      justify-content:space-around;
+      margin-right: 10px;
+    }
+    li {
+      display: inline;
+      margin-left: 5px;
+    }
+    a:hover {
+      text-decoration: overline;
+      color: $tertiary-color;
+    }
+  }
+}

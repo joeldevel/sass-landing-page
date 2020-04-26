@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif, Helvetica;
+  min-height: 99vh; }
+
+body::after {
+  content: "";
+  background: url("/home/pepe/Documents/2020/joeldevel/sass-landing-page/img/flower.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize; }
+
+.header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-color: transparent; }
+  .header img {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-height: 30px; }
+  .header img:hover {
+    transform: scale(1.1); }
+  .header nav {
+    padding: 20px 0;
+    margin-left: auto; }
+    .header nav ul {
+      margin-right: 10px; }
+    .header nav li {
+      display: inline;
+      margin-left: 5px; }
+    .header nav a:hover {
+      text-decoration: overline;
+      color: white; }
+
+main {
+  min-height: 70vh;
+  text-align: center;
+  padding: 10vh 30px;
+  color: black; }
+  main h1 {
+    margin: 0 0 20px 0; }
+
+.btn {
+  color: black;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin: 20px 0; }
+
+.btn:hover {
+  transform: scale(0.98); }
+
+footer {
+  background-color: #cccccc;
+  min-height: 9vh; }
+  footer nav {
+    padding: 20px 0;
+    margin-left: auto; }
+    footer nav ul {
+      display: flex;
+      justify-content: space-around;
+      margin-right: 10px; }
+    footer nav li {
+      display: inline;
+      margin-left: 5px; }
+    footer nav a:hover {
+      text-decoration: overline;
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+@import '../utils/margin-padding-box';
+
+// $primary-color:#123;
+$primary-color:transparent;
+$secondary-color:black;
+$tertiary-color: white;
+$bg-img: 'img/flower.jpg';
+
+$font-stack: sans-serif, Helvetica;
+
+body {
+  font-family: $font-stack;
+  min-height: 99vh;
+  // background-color: #cccccc;
+  // background-image: linear-gradient(red, yellow);
+  // background-image: url('/home/pepe/Documents/2020/joeldevel/sass-landing-page/img/flower.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+//   div {
+//   width: 200px;
+//   height: 200px;
+//   display: block;
+//   position: relative;
+// }
+//
+}
+body::after {
+  content: "";
+  background: url('/home/pepe/Documents/2020/joeldevel/sass-landing-page/img/flower.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  text-transform: capitalize;
+}
+a:visited {
+  // color: $primary-color;
+}
