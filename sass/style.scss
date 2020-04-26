@@ -1,10 +1,12 @@
 @import "partials/general";
+@import "media/desktop";
 
 .header {
   max-height: 20vh;
   display: flex;
   justify-content: center;
   background-color: $primary-color;
+  position: sticky;
 
   img {
       margin-top: 10px;
@@ -31,7 +33,6 @@
   }
 }
 main {
-  min-height: 70vh;
   text-align: center;
   padding: 10vh 30px;
   // background-image: url($bg-img);
@@ -42,6 +43,25 @@ main {
     margin: 0 0 20px 0;
   }
   section {
+    min-height: 70vh;
+  }
+  section.works-section {
+    min-height: 90vh;
+    margin-top: 20px;
+    margin-left: -30px;
+    margin-right:  -30px;
+    // background-color: dodgerblue;
+    article.work {
+    // mobile first
+      display:flex;
+      flex-direction: column;
+      min-height: 90vh;
+      img {
+        // display:none;
+        width: 100%;
+      }
+      // border: 1px solid black;
+    }
 
   }
 }
@@ -76,6 +96,32 @@ footer {
     a:hover {
       text-decoration: overline;
       color: $tertiary-color;
+    }
+  }
+}
+// contact page
+.contact-form-container {
+  margin: 0 10px;
+  form {
+    display: flex;
+    flex-direction: column;
+    div {
+      margin: 5px 0;
+      label {
+        float:left;
+      }
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+    .textarea-container {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      // display: inline-block;
+      // width: 100%;
+      // background: red;
     }
   }
 }

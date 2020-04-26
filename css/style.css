@@ -26,11 +26,17 @@ a {
   color: black;
   text-transform: capitalize; }
 
+@media screen and (min-width: 600px) {
+  .contact-form-container {
+    max-width: 50vw;
+    display: inline-block;
+    overflow: hidden; } }
 .header {
   max-height: 20vh;
   display: flex;
   justify-content: center;
-  background-color: transparent; }
+  background-color: transparent;
+  position: sticky; }
   .header img {
     margin-top: 10px;
     margin-left: 20px;
@@ -50,12 +56,24 @@ a {
       color: white; }
 
 main {
-  min-height: 70vh;
   text-align: center;
   padding: 10vh 30px;
   color: black; }
   main h1 {
     margin: 0 0 20px 0; }
+  main section {
+    min-height: 70vh; }
+  main section.works-section {
+    min-height: 90vh;
+    margin-top: 20px;
+    margin-left: -30px;
+    margin-right: -30px; }
+    main section.works-section article.work {
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh; }
+      main section.works-section article.work img {
+        width: 100%; }
 
 .btn {
   color: black;
@@ -84,5 +102,22 @@ footer {
     footer nav a:hover {
       text-decoration: overline;
       color: white; }
+
+.contact-form-container {
+  margin: 0 10px; }
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column; }
+    .contact-form-container form div {
+      margin: 5px 0; }
+      .contact-form-container form div label {
+        float: left; }
+      .contact-form-container form div input {
+        display: block;
+        width: 100%; }
+    .contact-form-container form .textarea-container {
+      display: flex;
+      flex-direction: column;
+      text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

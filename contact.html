@@ -20,18 +20,24 @@
   </header>
   <main>
     <h1>Contact Me</h1>
-    <div>
-      <section>
-        <form action="#">
-          <label for="name">Name</label>
-          <input type="text" name="name">
-          <label for="email">Email</label>
-          <input type="email" name="email">
-          <label for="text">Your message</label>
-          <textarea name="text" rows="8" cols="80"></textarea>
-          <input type="submit">
+    <div class="contact-form-container">
+        <form action="#" class="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email">
+          </div>
+          <div class="textarea-container">
+            <label for="text" class="textarea-label">
+              <p>Your message</p>
+            </label>
+            <textarea name="text" rows="8" cols="40"></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn">
         </form>
-      </section>
     </div>
   </main>
   <footer>
