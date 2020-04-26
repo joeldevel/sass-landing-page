@@ -1,7 +1,7 @@
 @import "partials/general";
 
 .header {
-  height: 20vh;
+  max-height: 20vh;
   display: flex;
   justify-content: center;
   background-color: $primary-color;

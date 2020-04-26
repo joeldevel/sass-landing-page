@@ -5,7 +5,8 @@
 
 body {
   font-family: sans-serif, Helvetica;
-  min-height: 99vh; }
+  min-height: 99vh;
+  background-color: #ccc; }
 
 body::after {
   content: "";
@@ -26,7 +27,7 @@ a {
   text-transform: capitalize; }
 
 .header {
-  height: 20vh;
+  max-height: 20vh;
   display: flex;
   justify-content: center;
   background-color: transparent; }
